@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, 'Microsoft JhengHei', sans-serif;
+  background: #ffffff;
+}
+
+main {
+  max-width: 980px;
+  margin: 40px auto;
+}
+
+.toolbar {
+  margin-bottom: 16px;
+}
+
+select {
+  padding: 6px 10px;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+}
+
+.seat {
+  border: 0;
+  border-radius: 6px;
+  padding: 14px 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.empty {
+  background: #eeeeee;
+  color: #000;
+}
+
+.occupied {
+  background: #e60000;
+  color: #fff;
+}
+
+.selected {
+  background: #78f28c;
+  color: #000;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.box {
+  display: inline-block;
+  width: 28px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.empty-box { background: #eeeeee; }
+.occupied-box { background: #e60000; }
+.selected-box { background: #78f28c; }
+
+.submit {
+  background: #0057b8;
+  color: white;
+  border: 0;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.msg {
+  margin-top: 12px;
+  font-weight: bold;
+}
